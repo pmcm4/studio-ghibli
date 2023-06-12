@@ -1,5 +1,6 @@
 import styles from './navbar.module.scss';
 import classNames from 'classnames';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export interface NavbarProps {
     className?: string;
@@ -20,9 +21,12 @@ export const Navbar = ({ className }: NavbarProps) => {
                     }
                 />
                 <div className={styles.menu}>
-                    <span className={styles.menu_items}>Menu</span>
-                    <span className={styles.menu_items}>Movie List</span>
-                    <span className={styles.menu_items}>About Studio Ghibli</span>
+                <Link style={{ textDecoration: 'none', color: "black" }} to={'/'} className={styles.name}>
+                    <span className={styles.menu_items}>Home</span> </Link>
+                    <Link style={{ textDecoration: 'none', color: "black" }} to={'/movielist'} className={styles.name}>
+                        <span className={styles.menu_items}>Movie List</span></Link>
+                        <Link style={{ textDecoration: 'none', color: "black" }} to={'/about'} className={styles.name}>
+                            <span className={styles.menu_items}>About Studio Ghibli</span></Link>
                 </div>
             </div>
         </div>

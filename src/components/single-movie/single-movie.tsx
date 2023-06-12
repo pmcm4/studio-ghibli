@@ -1,3 +1,4 @@
+import { Navbar } from '../navbar/navbar';
 import styles from './single-movie.module.scss';
 import classNames from 'classnames';
 
@@ -12,6 +13,7 @@ export interface SingleMovieProps {
 export const SingleMovie = ({ className }: SingleMovieProps) => {
     return (
         <div className={classNames(styles.root, className)}>
+            <Navbar />
             <div className={styles.text}>
                 <h1 className={styles.Title}>Kiki’s Delivery Service</h1>
                 <p className={styles.asdgasdf}>1989 | Adventure/Family | 1h 42m</p>

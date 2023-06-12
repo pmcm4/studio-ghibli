@@ -1,5 +1,7 @@
 import styles from './about.module.scss';
 import classNames from 'classnames';
+import { Navbar } from '../navbar/navbar';
+import { Footer } from '../footer/footer';
 
 export interface AboutProps {
     className?: string;
@@ -12,6 +14,7 @@ export interface AboutProps {
 export const About = ({ className }: AboutProps) => {
     return (
         <div className={classNames(styles.root, className)}>
+            <Navbar />
             <div className={styles.text}>
                 <h1 className={styles.Header}>Studio Ghibli</h1>
                 <p className={styles.desc}>
@@ -27,6 +30,7 @@ export const About = ({ className }: AboutProps) => {
                 alt=""
                 className={styles.bg}
             />
+            <Footer />
         </div>
     );
 };

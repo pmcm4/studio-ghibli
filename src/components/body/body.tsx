@@ -1,6 +1,7 @@
 import styles from './body.module.scss';
 import classNames from 'classnames';
 import homevid from '../../assets/homevid.svg';
+import { Navbar } from '../navbar/navbar';
 
 export interface BodyProps {
     className?: string;
@@ -13,6 +14,7 @@ export interface BodyProps {
 export const Body = ({ className }: BodyProps) => {
     return (
         <div className={classNames(styles.root, className)}>
+            <Navbar />
             <video
                 autoPlay={true}
                 src="https://res.cloudinary.com/dgb2lnz2i/video/upload/v1686544507/Untitled_design_jmyiq1.mp4"

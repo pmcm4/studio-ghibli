@@ -1,5 +1,7 @@
+import { Navbar } from '../navbar/navbar';
 import styles from './movie-list.module.scss';
 import classNames from 'classnames';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export interface MovieListProps {
     className?: string;
@@ -12,8 +14,10 @@ export interface MovieListProps {
 export const MovieList = ({ className }: MovieListProps) => {
     return (
         <div className={classNames(styles.root, className)}>
+            <Navbar />
             <h1 className={styles.headerMov}>Movie List</h1>
             <div className={styles.container}>
+            
                 <div className={styles.movies}>
                     <img
                         src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686544533/images_15_u4heoz.jpg"
@@ -22,6 +26,7 @@ export const MovieList = ({ className }: MovieListProps) => {
                     />
                     <h1 className={styles.text}>Spirited Away</h1>
                 </div>
+
                 <div className={styles.movies}>
                     <img
                         src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686544532/images_1_hhvcp4.jpg"
