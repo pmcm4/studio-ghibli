@@ -1,0 +1,27 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  height: 100vh;
+  justify-items: start;
+  align-items: start;
+}
+.Header {
+  font-size: 96px;
+  margin-left: 100px;
+}
+.desc {
+  text-align: justify;
+  width: 619px;
+  height: 168px;
+  font-size: 20px;
+  margin-left: 100px;
+}
+.bg {
+  width: 100%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}

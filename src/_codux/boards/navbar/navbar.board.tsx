@@ -1,13 +1,11 @@
 import { createBoard } from '@wixc3/react-board';
-import App from '../../../App';
+import { Navbar } from '../../../components/navbar/navbar';
 
 export default createBoard({
-    name: 'App',
-    Board: () => <App />,
+    name: 'Navbar',
+    Board: () => <Navbar />,
     environmentProps: {
         windowWidth: 1920,
         windowHeight: 1080,
-        canvasWidth: 1916,
-        canvasHeight: 1080,
     },
 });
