@@ -29,20 +29,24 @@ export const Footer = ({ className }: FooterProps) => {
                         className={styles.footerContactUsEmail} 
                         placeholder='Email'
                     />
-                    <input 
+                    <textarea
                         className={styles.footerContactUsMessage} 
                         placeholder='Message'
                     />
-                    <button>Send</button>
+                    <button className={styles.footerContactUsSend}>Send</button>
                 </div>
                 <div className={styles.footerFollowUs}>
                     <p className={styles.footerFollowUsText}>Follow Us</p>
-                    <img className={styles.footerFollowUsButtons}></img>
+                    <img className={styles.footerFollowUsButtons} src='./footer/fb.png'/>
+                    <img className={styles.footerFollowUsButtons} src='./footer/twitter.png'/>
+                    <img className={styles.footerFollowUsButtons} src='./footer/ig.png'/>
                 </div>
                 <div className={styles.footerCallUs}>
                     <p className={styles.footerCallUsText}>Call Us</p>
                     <p className={styles.footerCallUsNumber}>01 2345 6789</p>
                 </div>
             </div>
+            <div className={styles.footerDivider}></div>
+            <p className={styles.footerRights}>© 2023 Teletubbies. All Rights Reserved.</p>
         </div>);
 };
