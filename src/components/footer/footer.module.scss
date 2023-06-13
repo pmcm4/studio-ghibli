@@ -1,5 +1,77 @@
-.root {
-  display: flex;
-  height: 519px;
+.footerImg {
+  width: 100%;
+}
+
+.footerContainer {
   background-color: black;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 3em;
+  display: flex ;
+}
+
+.footerText { 
+  margin-left: 5em;
+  margin-right: 5em;
+  width: 20%;
+  text-align: left;
+}
+
+.footerTextTagline {
+  color: white;
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+.footerContactUs {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContactUsText {
+  color: white ;
+  text-align: left;
+  margin: 0;
+  margin-left: 4.25em;
+}
+
+.footerContactUsEmail {
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 0 5em;
+  background-color: black;
+  color: white;
+  padding: .5em .25em;
+}
+
+.footerContactUsMessage {
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 0 5em;
+  background-color: black;
+  color: white;
+  padding: .5em .25em;
+}
+
+.footerFollowUs {
+  width: 20%;
+}
+
+.footerFollowUsText {
+  color: white;
+}
+
+.footerCallUs {
+  width: 25%;
+}
+
+.footerCallUsText {
+  color: white;
+}
+
+.footerCallUsNumber {
+  color: white;
 }

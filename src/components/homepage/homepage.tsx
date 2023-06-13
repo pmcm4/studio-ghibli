@@ -2,6 +2,7 @@ import styles from './homepage.module.scss';
 import classNames from 'classnames';
 import homevid from '../../assets/homevid.svg';
 import { Navbar } from '../navbar/navbar';
+import { Footer } from '../footer/footer';
 
 export interface BodyProps {
     className?: string;
@@ -21,7 +22,10 @@ export const HomePage = ({ className }: BodyProps) => {
                     src="https://res.cloudinary.com/dgb2lnz2i/video/upload/v1686544507/Untitled_design_jmyiq1.mp4"
                     controls={false}
                 />
-                <p className={styles.videoText}>This is the title</p>
+                <div className={styles.videoTextContainer}>
+                    <p className={styles.videoText}>Experience the Magic of Studio Ghibli</p>
+                    <p className={styles.videoSubText}>Discover the Finest Selection of Films Now!</p>
+                </div>
             </div>
             <div className={styles.containermain}>
                 <div className={styles.header}>
@@ -77,7 +81,7 @@ export const HomePage = ({ className }: BodyProps) => {
                         className={styles.divimage}
                     />
                 </div>
-                <div className={styles.text1}>
+                <div className={styles.text}>
                     <h1 className={styles.asdfsafsdaf}>Shed Tears.</h1>
                     <p className={styles.parpara}>
                         &quot;Grave of the Fireflies&quot; induces tears <br />
@@ -104,12 +108,7 @@ export const HomePage = ({ className }: BodyProps) => {
                     />
                 </div>
             </div>
-            <img
-                className={classNames(styles.image, styles.footerImg)}
-                src={
-                    'https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686533996/asdfasfasdf_jyob4x.png'
-                }
-            />
+            <Footer/>
         </div>
     );
 };
