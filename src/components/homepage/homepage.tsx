@@ -1,4 +1,4 @@
-import styles from './body.module.scss';
+import styles from './homepage.module.scss';
 import classNames from 'classnames';
 import homevid from '../../assets/homevid.svg';
 import { Navbar } from '../navbar/navbar';
@@ -11,16 +11,18 @@ export interface BodyProps {
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const Body = ({ className }: BodyProps) => {
+export const HomePage = ({ className }: BodyProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <Navbar />
-            <video
-                autoPlay={true}
-                src="https://res.cloudinary.com/dgb2lnz2i/video/upload/v1686544507/Untitled_design_jmyiq1.mp4"
-                className={styles.vide}
-                controls={false}
-            />
+            <div className={styles.videoContainer}>
+                <video
+                    className={styles.video}
+                    src="https://res.cloudinary.com/dgb2lnz2i/video/upload/v1686544507/Untitled_design_jmyiq1.mp4"
+                    controls={false}
+                />
+                <p className={styles.videoText}>This is the title</p>
+            </div>
             <div className={styles.containermain}>
                 <div className={styles.header}>
                     <span className={styles.MovieList}>Movie List</span>
