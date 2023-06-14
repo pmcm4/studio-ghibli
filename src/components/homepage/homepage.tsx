@@ -21,6 +21,7 @@ export const HomePage = ({ className }: BodyProps) => {
                     className={styles.video}
                     src="https://res.cloudinary.com/dgb2lnz2i/video/upload/v1686544507/Untitled_design_jmyiq1.mp4"
                     controls={false}
+                    autoPlay={true}
                 />
                 <div className={styles.videoTextContainer}>
                     <p className={styles.videoText}>Experience the Magic of Studio Ghibli</p>
@@ -30,7 +31,7 @@ export const HomePage = ({ className }: BodyProps) => {
             <div className={styles.containermain}>
                 <div className={styles.header}>
                     <span className={styles.MovieList}>Movie List</span>
-                    <span className={styles.goto}>Go to Movie List &gt;</span>
+                    <span className={styles.goto} onClick={() => {window.location.href = '/movielist'}}>Go to Movie List &gt;</span>
                 </div>
                 <div className={styles.movies}>
                     <img

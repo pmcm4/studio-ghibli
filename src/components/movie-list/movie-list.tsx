@@ -1,3 +1,4 @@
+import { Footer } from '../footer/footer';
 import { Navbar } from '../navbar/navbar';
 import styles from './movie-list.module.scss';
 import classNames from 'classnames';
@@ -18,7 +19,7 @@ export const MovieList = ({ className }: MovieListProps) => {
             <h1 className={styles.headerMov}>Movie List</h1>
             <div className={styles.container}>
             
-                <div className={styles.movies}>
+                <div className={styles.movies} onClick={() => {window.location.href = '/singlemovie?movieTitle=spiritedaway'}}>
                     <img
                         src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686544533/images_15_u4heoz.jpg"
                         alt=""
@@ -26,16 +27,15 @@ export const MovieList = ({ className }: MovieListProps) => {
                     />
                     <h1 className={styles.text}>Spirited Away</h1>
                 </div>
-
-                <div className={styles.movies}>
+                <div className={styles.movies} onClick={() => {window.location.href = '/singlemovie?movieTitle=kikisdeliveryservice'}}>
                     <img
-                        src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686544532/images_1_hhvcp4.jpg"
+                        src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686544534/images_16_p73hyj.jpg"
                         alt=""
                         className={styles.moviePoster}
                     />
-                    <h1 className={styles.text}>Ponyo</h1>
+                    <h1 className={styles.text}>Kiki’s Delivery Service</h1>
                 </div>
-                <div className={styles.movies}>
+                <div className={styles.movies} onClick={() => {window.location.href = '/singlemovie?movieTitle=myneighbourtotoro'}}>
                     <img
                         src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686544534/images_2_gzds4b.jpg"
                         alt=""
@@ -43,7 +43,7 @@ export const MovieList = ({ className }: MovieListProps) => {
                     />
                     <h1 className={styles.text}>My Neighbor Totoro</h1>
                 </div>
-                <div className={styles.movies}>
+                <div className={styles.movies} onClick={() => {window.location.href = '/singlemovie?movieTitle=howlsmovingcastle'}}>
                     <img
                         src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686544538/images_3_xvzbi8.jpg"
                         alt=""
@@ -53,19 +53,19 @@ export const MovieList = ({ className }: MovieListProps) => {
                 </div>
                 <div className={styles.movies}>
                     <img
-                        src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686544534/images_16_p73hyj.jpg"
-                        alt=""
-                        className={styles.moviePoster}
-                    />
-                    <h1 className={styles.text}>Kiki’s Delivery Service</h1>
-                </div>
-                <div className={styles.movies}>
-                    <img
                         src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686544540/images_5_qhlkef.jpg"
                         alt=""
                         className={styles.moviePoster}
                     />
                     <h1 className={styles.text}>Castle In The Sky</h1>
+                </div>
+                <div className={styles.movies}>
+                    <img
+                        src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686544532/images_1_hhvcp4.jpg"
+                        alt=""
+                        className={styles.moviePoster}
+                    />
+                    <h1 className={styles.text}>Ponyo</h1>
                 </div>
                 <div className={styles.movies}>
                     <img
@@ -212,11 +212,7 @@ export const MovieList = ({ className }: MovieListProps) => {
                     <h1 className={styles.text}>Eartwig and the Witch</h1>
                 </div>
             </div>
-            <img
-                src="https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686533996/asdfasfasdf_jyob4x.png"
-                alt=""
-                className={styles.footerimg}
-            />
+            <Footer/>
         </div>
     );
 };

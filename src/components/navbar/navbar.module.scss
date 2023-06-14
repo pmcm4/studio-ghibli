@@ -19,11 +19,14 @@
   justify-content: space-around;
   align-items: center;
   justify-items: center;
-  width: 800px;
   margin-right: 50px;
 }
 .menu_items {
   color: white;
   font-size: 25px;
   cursor: pointer;
+  margin: 0 1em;
+}
+.menu_items:hover {
+  text-decoration: underline;
 }

@@ -39,7 +39,6 @@ export const About: React.FC<AboutProps> = ({ className }) => {
         alt=""
         className={styles.bg}
       />
-      <Footer />
     </div>
   );
 };

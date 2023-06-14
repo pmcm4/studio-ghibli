@@ -19,14 +19,15 @@ export const Navbar = ({ className }: NavbarProps) => {
                     src={
                         'https://res.cloudinary.com/dgb2lnz2i/image/upload/v1686530644/ghibli_brxrmz.png'
                     }
+                    onClick={() => { window.location.href = '/' }}
                 />
                 <div className={styles.menu}>
-                <Link style={{ textDecoration: 'none', color: "black" }} to={'/'} className={styles.name}>
-                    <span className={styles.menu_items}>Home</span> </Link>
+                    <Link style={{ textDecoration: 'none', color: "black" }} to={'/'} className={styles.name}>
+                        <span className={styles.menu_items}>Home</span> </Link>
                     <Link style={{ textDecoration: 'none', color: "black" }} to={'/movielist'} className={styles.name}>
                         <span className={styles.menu_items}>Movie List</span></Link>
-                        <Link style={{ textDecoration: 'none', color: "black" }} to={'/about'} className={styles.name}>
-                            <span className={styles.menu_items}>About Studio Ghibli</span></Link>
+                    <Link style={{ textDecoration: 'none', color: "black" }} to={'/about'} className={styles.name}>
+                        <span className={styles.menu_items}>About Studio Ghibli</span></Link>
                 </div>
             </div>
         </div>

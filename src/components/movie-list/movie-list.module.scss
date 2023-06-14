@@ -1,11 +1,18 @@
+@font-face {
+  font-family: ModernAntiqua;
+  src: url(../../../public/ModernAntiqua-Book.ttf);
+}
+
 .root {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
+  align-items: center;  
+  font-family: Montserrat;
 }
 .headerMov {
   font-size: 64px;
+  font-family: 'ModernAntiqua';
+  font-weight: normal;
 }
 .container {
   display: grid;
@@ -23,6 +30,17 @@
   width: 215px;
   height: 420px;
   cursor: pointer;
+}
+.movies:hover {
+  animation: smoothEnlarge .5s forwards;
+}
+@keyframes smoothEnlarge {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }
 .moviePoster {
   display: flex;
@@ -42,4 +60,15 @@
 .text {
   text-align: center;
   font-size: 24px;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
 }

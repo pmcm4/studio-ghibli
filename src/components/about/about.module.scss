@@ -1,13 +1,21 @@
+@font-face {
+  font-family: ModernAntiqua;
+  src: url(../../../public/ModernAntiqua-Book.ttf);
+}
+
 .root {
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-items: start;
   align-items: start;
+  font-family: Montserrat;
 }
 .Header {
   font-size: 96px;
   margin-left: 100px;
+  font-family: 'ModernAntiqua'; 
+  font-weight: normal;
 }
 .desc {
   text-align: justify;
@@ -39,10 +47,18 @@
     margin-top: 20px;
   }
 
+  .Header {
+    margin-left: 0;
+  }
+
+  .desc {
+    margin-left: 0;
+  }
+
   .bg {
     position: absolute;
-    right: 25%;
-    top: 15%;
+    right: 30%;
+    top: 50%;
     z-index: -1;
     opacity: 60%;
   }
