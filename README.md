@@ -1,15 +1,11 @@
-<div align="center">  
-    <img height="50" src="./src/assets/codux.svg">  
-    <h1>React App template for Codux</h1>
-</div>
+
+### Studio Ghibli
+
+This is a website dedicated to showcasing the videographic milestones of Studio Ghibli. The website provides information about Studio Ghibli's popular films and allows users to explore their extensive collection. It was developed using TypeScript, SCSS, and React.js. This allowed greater control over individual site elements while speeding up the development process compared to vanilla JavaScript and CSS. 
 
 ### A Visual IDE for React Projects
 
-Codux is an all-in-one visual development environment. Whether you’re starting a new app, creating components, or editing an existing project, every visual change you make reflects instantly in the code and vice versa. To learn more about Codux, visit our website - [https://www.codux.com/](https://www.codux.com/)
-
 This project was bootstrapped with [`create-react-app`](https://github.com/facebook/create-react-app).
-
-It includes a single React component to start your project with, a sample [`codux.config.json`](codux.config.json) with preconfigured keys, a `package.json` file to describe the project's packages and dependencies, and a folder and component structure to put everything neatly in its place.
 
 - Edit, render and compose apps that make use of **`React`**-based components.
 - Create components with **`TypeScript`**, **`SCSS`** and **`CSS Modules`** support.
@@ -57,3 +53,18 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Notable Features
+
+The website features:
+1. Popular films from Studio Ghibli: The team ensured that a range of Studio Ghibli’s fan classics and popular films were featured, presented, and described in the site with a strong visual appeal. This helps newcomers identify what films are best as an introductory to Studio Ghibli’s revolutionary artstyle and long-time fans recall certain movies that may have been forgotten.
+2. Responsive Design: The website layout is refined to fit different devices and screen sizes, ensuring an optimal viewing experience for users on desktops, tablets, and on mobile devices.
+3. Intuitive Navigation: The website features intuitive visual elements, allowing users to browse through different film categories, access film details, and navigate back to the home page effortlessly, while feeling immersed in Studio Ghibli’s art direction.
+
+However, during the development process, some challenges were encountered. These included:
+
+1. Collaboration: The move to typescript and using a very different framework proved to be a leap in difficulty for some team members, resulting in some difficulties in applying certain concepts learned from the usual HTML/CSS/JavaScript programming languages.
+
+2. Responsive Design: Designing a responsive and consistent layout that adapts seamlessly to different devices and screen sizes required testing, fine-tuning, and persistence. 
+
+3. Information Accuracy: As multiple films by Studio Ghibli were featured on the website, information such as running screen time, movie titles, and descriptions were scrutinized and cross-checked to ensure that each entry accurately represents the movie depicted by the website.
